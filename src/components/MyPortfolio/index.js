@@ -36,7 +36,7 @@ function MyPortfolio() {
                     <button className="btn btn-info btn-lg" onClick={()=>handleChange(0)} >Covid Travel Planner</button>
                     <button className="btn btn-info btn-lg" onClick={()=>handleChange(1)}>Follow My Fitness</button> 
                     <button className="btn btn-info btn-lg" onClick={()=>handleChange(2)} >Weather Dashboard</button>  
-                </p>
+                </p> 
             </div>
         </div>
         );
