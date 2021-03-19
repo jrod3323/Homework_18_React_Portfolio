@@ -4,33 +4,47 @@ import TopNav from "./components/TopNav/";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import MyPortfolio from "./components/MyPortfolio";
-import data from "./projects.json";
-import CTP from "./components/MyPortfolio/Covid_Travel_Planner_Demo.gif";
-import FMF from "./components/MyPortfolio/fmf-gif.gif";
-import WDB from "./components/MyPortfolio/hw6weatherdashboard.gif"
+import MyResume from "./components/MyResume";
+import ContactMe from "./components/ContactMe"
+import ProjectData from "./projects.json";
+import PortfolioContext from "./components/utils/PortfolioContext"
 
 
 function App() {
 
+
+  
+
   return (
+    
     <Router>
-      <TopNav />
+        <TopNav />
 
-      <Switch>
+        
+          <Switch>
 
-      <Route exact path={["/"]}>
-        <Header />
-      </Route>
+          <Route exact path={["/"]}>
+            <Header />
+          </Route>
 
-      <Route exact path={["/aboutMe"]}>
-        <AboutMe />
-      </Route>
+          <Route exact path={["/aboutMe"]}>
+            <AboutMe />
+          </Route>
 
-      <Route exact path={["/myPortfolio"]}>
-        <MyPortfolio />
-      </Route>
+          <Route exact path={["/myPortfolio"]}>
+            <MyPortfolio />
+          </Route>
 
-      </Switch>
+          <Route exact path={["/myResume"]}>
+            <MyResume />
+          </Route>
+
+          <Route exact path={["/ContactMe"]}>
+            <ContactMe />
+          </Route>
+
+          </Switch>
+        
     </Router>
   );
 }
