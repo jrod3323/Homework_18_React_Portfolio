@@ -4,10 +4,13 @@ import TopNav from "./components/TopNav/";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import MyPortfolio from "./components/MyPortfolio";
-import MyResume from "./components/MyResume";
-import ContactMe from "./components/ContactMe"
-import ProjectData from "./projects.json";
-import PortfolioContext from "./components/utils/PortfolioContext"
+import MyResumeTop from "./components/MyResumeTop";
+import MyResumeBottom from "./components/MyResumeBottom";
+import ContactMe from "./components/ContactMe";
+import Resume from "./components/Resume";
+import WorkHistory from "./components/WorkHistory";
+import Skills from "./components/Skills";
+import Education from "./components/Education"
 
 
 function App() {
@@ -35,12 +38,30 @@ function App() {
             <MyPortfolio />
           </Route>
 
-          <Route exact path={["/myResume"]}>
-            <MyResume />
+          <Route exact path={["/myResume","/myResume/Work"]}>
+            <MyResumeTop/>
+            <WorkHistory/>
+            <MyResumeBottom/>
+          </Route>
+
+          <Route exact path={["/myResume/Education"]}>
+            <MyResumeTop/>
+            <Education/>
+            <MyResumeBottom/>
+          </Route>
+
+          <Route exact path={["/myResume/Skills"]}>
+            <MyResumeTop/>
+            <Skills/>
+            <MyResumeBottom/>
           </Route>
 
           <Route exact path={["/ContactMe"]}>
             <ContactMe />
+          </Route>
+
+          <Route exact path={["/viewResume"]}>
+            <Resume />
           </Route>
 
           </Switch>

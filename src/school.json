@@ -1,0 +1,17 @@
+[
+    {
+        "school": "University of Texas at Austin",
+        "degree": "Full Stack Web Development Coding Bootcamp",
+        "timeframe": "2020-2021"
+    },
+    {
+        "school": "University of Toledo",
+        "degree": "Master of Biomedical Sciences , Human Donation Science",
+        "timeframe": "2010-2011"
+    },
+    {
+        "school": "University of Toledo",
+        "degree": "Bachelor of Sciences, Pharmaceutical Sciences",
+        "timeframe": "2005-2010"
+    }
+]
