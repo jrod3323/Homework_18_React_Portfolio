@@ -1,0 +1,23 @@
+/* About Me Section */
+/*                  */
+
+/* section background color */
+#aboutMe{
+    background-color: #D2E8EA ;
+}
+
+/* Card CSS */
+.aboutMeCard{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+.aboutMeCardContainer{
+    background-color: #50969c;
+    color: black;
+    box-shadow:4px 4px rgb(179, 177, 177);
+}
+
+.card-text{
+    height: 300px;
+}

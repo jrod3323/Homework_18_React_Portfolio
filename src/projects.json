@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Covid Travel Planner",
+        "url": "https://jrod3323.github.io/Covid_Travel_Planner/",
+        "info": "COVID has made it difficult to plan activities and excursions for those who choose to travel domestically within the US. Travelers don’t always have updated information about COVID prevalence, nor can they predict which activities are available to partake in while traveling to the state of their choice. Our website, does both of these things. If a user decides to choose Colorado, for example, our COVID Travel Planner will present the most up to date COVID data for that state, and then will suggest national parks in which we believe domestic travelers can feel safe outdoors while following suggested CDC guidelines for traveling during the pandemic."
+    },
+    {
+        "id": 2,
+        "title": "Follow My Fitness",
+        "url": "https://follow-my-fitness.herokuapp.com/",
+        "info": "Follow My Fitness is an application designed to give a user the ability to input and store their exercise goals and to input and track various workouts, to include: cardio/weightlifting/bodyweight movements. A user can also calcualte and store their BMI."
+    },
+    {
+        "id": 3,
+        "title": "Weather Dashboard",
+        "url": "https://jrod3323.github.io/Homework_6_Weather_Dashboard/",
+        "info": "This project is a Weather Dashborad. The tool is designed to provide the user with a means of reviewing the current weather as well as a 5 day forecast for the City of a User's choice." 
+    }
+]

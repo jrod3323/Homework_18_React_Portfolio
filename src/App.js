@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState,useEffect} from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import TopNav from "./components/TopNav/";
+import Header from "./components/Header";
+import AboutMe from "./components/AboutMe";
+import MyPortfolio from "./components/MyPortfolio";
+import data from "./projects.json";
+import CTP from "./components/MyPortfolio/Covid_Travel_Planner_Demo.gif";
+import FMF from "./components/MyPortfolio/fmf-gif.gif";
+import WDB from "./components/MyPortfolio/hw6weatherdashboard.gif"
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <TopNav />
+
+      <Switch>
+
+      <Route exact path={["/"]}>
+        <Header />
+      </Route>
+
+      <Route exact path={["/aboutMe"]}>
+        <AboutMe />
+      </Route>
+
+      <Route exact path={["/myPortfolio"]}>
+        <MyPortfolio />
+      </Route>
+
+      </Switch>
+    </Router>
   );
 }
 
